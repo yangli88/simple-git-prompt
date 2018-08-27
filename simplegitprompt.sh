@@ -54,7 +54,7 @@ function simple_git_prompt() {
             SIMPLE_GIT_PROMPT+=" ${BoldWhite}$CUR_WORK_DIR${ResetColor}"
         fi
     else
-        SIMPLE_GIT_PROMPT+=" ${BoldWhite}$CUR_WORK_DIR${ResetColor}"
+        SIMPLE_GIT_PROMPT+=" ${BoldGreen}\w${ResetColor}"
     fi
 
     # set git status part of prompt
@@ -106,3 +106,4 @@ source "${__COLORS_CMD}"
 
 # set standard function to set PS1
 PROMPT_COMMAND=simple_git_prompt
+
